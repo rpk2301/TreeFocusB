@@ -1,0 +1,44 @@
+entity Timer {
+	duration Integer
+	expirationTime ZonedDateTime
+	status TimerStatus
+}
+entity Tree
+{
+trees TreeType
+}
+entity Bank
+{
+treesowned Integer
+}
+enum TreeType{
+Dogwood
+Willow
+Palm
+Cherry
+Cedar
+Mahogony
+Cork
+Maple
+Birch
+Walnut
+Pine
+Evergreen
+}
+enum TimerStatus
+{
+Running
+Expired
+}
+relationship OneToOne
+{
+ Timer{assignedTo(login)} to User
+}
+relationship ManyToOne
+{
+Tree{assignedTo(login)} to User
+ }
+ relationship OneToOne
+ {
+ Bank{assignedTo(login)} to User
+ }

@@ -1,0 +1,28 @@
+{
+  "applications": "*",
+  "changelogDate": "20230824182205",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "tree",
+  "fields": [
+    {
+      "fieldName": "trees",
+      "fieldType": "TreeType",
+      "fieldValues": "Dogwood,Willow,Palm,Cherry,Cedar,Mahogony,Cork,Maple,Birch,Walnut,Pine,Evergreen"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Tree",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "login",
+      "otherEntityName": "user",
+      "relationshipName": "assignedTo",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

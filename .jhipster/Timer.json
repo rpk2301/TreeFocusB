@@ -1,0 +1,37 @@
+{
+  "applications": "*",
+  "changelogDate": "20230824182204",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "timer",
+  "fields": [
+    {
+      "fieldName": "duration",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "expirationTime",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "TimerStatus",
+      "fieldValues": "Running,Expired"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Timer",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "login",
+      "otherEntityName": "user",
+      "ownerSide": true,
+      "relationshipName": "assignedTo",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "no"
+}

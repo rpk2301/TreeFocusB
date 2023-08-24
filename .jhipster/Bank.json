@@ -1,0 +1,28 @@
+{
+  "applications": "*",
+  "changelogDate": "20230824182206",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "bank",
+  "fields": [
+    {
+      "fieldName": "treesowned",
+      "fieldType": "Integer"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Bank",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "login",
+      "otherEntityName": "user",
+      "ownerSide": true,
+      "relationshipName": "assignedTo",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "no"
+}

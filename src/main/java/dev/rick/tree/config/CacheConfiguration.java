@@ -48,6 +48,9 @@ public class CacheConfiguration {
             createCache(cm, dev.rick.tree.domain.User.class.getName());
             createCache(cm, dev.rick.tree.domain.Authority.class.getName());
             createCache(cm, dev.rick.tree.domain.User.class.getName() + ".authorities");
+            createCache(cm, dev.rick.tree.domain.Timer.class.getName());
+            createCache(cm, dev.rick.tree.domain.Tree.class.getName());
+            createCache(cm, dev.rick.tree.domain.Bank.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
